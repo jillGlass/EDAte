@@ -1,0 +1,25 @@
+{
+  "name": "edate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "knex": "knex --knexfile /knexfile.js",
+    "dev": "nodemon index",
+    "test": "jest --watch --noStackTrace",
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "knex": "^0.20.1",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "nodemon": "^1.19.4"
+  }
+}
