@@ -1,4 +1,3 @@
- 
 const express = require('express')
 const hbs = require('express-handlebars')
 
@@ -14,6 +13,9 @@ server.engine('hbs', hbs({
 server.set('view engine', 'hbs')
 server.use(express.static('public'))
 server.use(express.urlencoded({ extended: true }))
+
+// configuration
+server.engine('handlebars.hbs', hbs({ extname: '.hbs' }))
 
 // Routes
 server.use('/', routes)
