@@ -1,10 +1,29 @@
-<h1>Matched profile</h1>
+
 {{#each placeholder matchproile}}
-<img src="/public/profile-stock-photos/{{placeholder images}}" alt="photo of {{placeholder name}}">
-<ul>
-  <li>{{placeholder name}}</li>
-  <li>Hi, connect with me on {{placeholder facebooklink}}</li>
-  <li>{{placeholder contact}}</li>
-</ul>
+  <section class="standard-entry">
+    <div class="blog-image">
+      <img src="/public/profile-stock-photos/{{placeholder images}}" alt="photo of {{placeholder name}}">
+    </div>
+
+
+    <h3 class="blog-title soft-skills">
+      Hi im {{placeholder name}}, connect with me on {{placeholder contacts}}
+    </h3>
+  </section>
 {{/each}}
-<br>
+
+{{!-- 
+{{#each placeholder matchproile}}
+  <section class="standard-entry">
+    <div class="blog-image">
+      <img src="/public/profile-stock-photos/{{placeholder images}}" alt="photo of {{placeholder name}}">
+    </div>
+
+
+    <ul class="blog-title soft-skills">
+      <li> 
+        Hi im {{placeholder name}}, connect with me on {{placeholder contacts}}
+      </li>
+    </ul>
+  </section>
+{{/each}} --}}
