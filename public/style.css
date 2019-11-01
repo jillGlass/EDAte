@@ -25,12 +25,13 @@ body {
     position: relative;
     overflow: hidden;
     list-style: none;
-    background-color: #ddb04d;
+    background-color: #4e8bc4;
     margin: 0;
+    
   }
   
   .navigation a {
-    color: black;
+    color: rgb(35, 226, 61);
     float: left;
     text-align: center;
     padding: 25px 20px;
@@ -60,7 +61,7 @@ body {
   
   .nav-right a {
     float: right;
-    font-size: 18px;
+    font-size: 40px;
   }
   #burger {
     float: right;
@@ -75,7 +76,7 @@ body {
   
   .column-1 {
     display: grid;
-    background-color: #c4bfbd;
+    background-color: #d3f7ca;
     align-items: center;
     justify-items: center;
     grid-template-rows: [title] 110px [intro] 30px [image] 230px [space] auto [end];
@@ -83,7 +84,7 @@ body {
   
   .column-2 {
     display: grid;
-    background-color: #c4bfbd;
+    background-color: #d3f7ca;
     align-items: center;
     justify-items: center;
     grid-template-rows: [title] 110px [intro] 30px [image] 230px [space] auto [end];
@@ -91,17 +92,26 @@ body {
   
   .column-3 {
     display: grid;
-    background-color: #c4bfbd;
+    background-color: #d3f7ca;
     align-items: center;
     justify-items: center;
     grid-template-rows: [title] 110px [intro] 30px [image] 230px [space] auto [end];
   }
+
+  .colourz {
+      color: rgb(137, 218, 17);
+  }
   
+  .center-me {
+      text-align: center;
+  }
+
   .title {
     display: inline-grid;
-    font-size: 3.5em;
+    font-size: 1.7em;
     padding: 0;
     justify-items: center;
+    text-align: center;
   }
   
   .image {
@@ -113,6 +123,7 @@ body {
     display: inline-grid;
     font-size: 1.1em;
     justify-items: center;
+    text-align: center;
   }
   
   @media screen and (min-width: 775px) {
@@ -142,7 +153,7 @@ body {
   
     .column-2 {
       display: grid;
-      background-color: #eee2dc;
+      background-color: ##d3f7ca;
       align-items: center;
       justify-items: center;
       grid-row-start: 2;
