@@ -1,15 +1,15 @@
 
-{{#each placeholder matchproile}}
-  <section class="standard-entry">
-    <div class="blog-image">
-      <img src="/public/profile-stock-photos/{{placeholder images}}" alt="photo of {{placeholder name}}">
+{{#each friends}}
+  <div class = 'intro center-me'>
+    <div class="image">
+      <img src="/public/profile-stock-photos/{{image}}" height='100'>
     </div>
 
 
-    <h3 class="blog-title soft-skills">
-      Hi im {{placeholder name}}, connect with me on {{placeholder contacts}}
-    </h3>
-  </section>
+    <div class = 'into center-me'>
+      Hi im {{name}}, connect with me at my awesome <a href="https://www.facebook.com">MySpace page</a>
+    </div>
+  </div>
 {{/each}}
 
 {{!-- 
