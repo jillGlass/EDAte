@@ -2,7 +2,7 @@ const request = require('supertest')
 const cheerio = require('cheerio')
 const server = require('../server')
 
-const testConfig = ('./test-configuration')
+const testConfig = require('./test-configuration')
 const db = require('../database')
 
 let testDb = null
