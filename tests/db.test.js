@@ -1,12 +1,11 @@
 const request = require('supertest')
-const cheerio = reuire('cheerio')
+const cheerio = require('cheerio')
 const server = require('../server')
 
 const testConfig = ('./test-configuration')
 const db = require('../database')
 
 let testDb = null
-
 
 beforeEach(() => {
   testDb = testConfig.getTestDb()
@@ -20,9 +19,10 @@ describe('DB Friends table tests', () => {
     const expected = 30
 
     return db.getFriends(testDb)
-      .then(users => {
+      .then(friends => {
         const actual = friends.length
         expect(actual).toBe(expected)
       })
       .catch(err => expect(err).toBeNull())
   })
+})

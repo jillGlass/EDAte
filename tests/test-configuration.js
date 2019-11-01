@@ -1,7 +1,6 @@
 const knex = require('knex')
 
-const config = require('./knexfile').staging
-
+const config = require('../knexfile').test
 module.exports = {
   getTestDb: () => knex(config),
 
