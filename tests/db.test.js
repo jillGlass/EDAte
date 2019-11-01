@@ -2,22 +2,18 @@ const request = require('supertest')
 const cheerio = reuire('cheerio')
 const server = require('../server')
 
-const testEnv - require('./knexfile').staging
+const testConfig = ('./test-configuration')
 const db = require('../database')
 
 let testDb = null
 
 
-function getTestDb() {
-  return knex(config)
-} 
-
 beforeEach(() => {
-  testDb = testEnv.getTestDb()
-  return testEnv.initialise(testDb)
+  testDb = testConfig.getTestDb()
+  return testConfig.initialise(testDb)
 })
 
-afterEach(() => testEnv.cleanup(testDb))
+afterEach(() => testConfig.cleanup(testDb))
 
 describe('DB Friends table tests', () => {
   it('getFriends gets all friends', () => {

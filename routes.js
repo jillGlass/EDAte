@@ -8,4 +8,8 @@ router.get('/', (req, res) => {
   res.render('home')
 })
 
+router.get('/matchProfile', (req, res) => {
+  res.render('matchProfile')
+})
+
 module.exports = router
