@@ -8,8 +8,15 @@ router.get('/', (req, res) => {
   res.render('home')
 })
 
-router.get('/matchProfile', (req, res) => {
-  res.render('matchProfile')
+router.post('/', (req, res) => {
+  db.formInput(req.body)
+    .finally(() => res.redirect('/match'))
+})
+
+router.get('/match', (req, res) => {
+  db.getFriends()
+    .then((friends) => db.getMatch(friends))
+    .then((match) => res.render('matchProfile', match))
 })
 
 module.exports = router
