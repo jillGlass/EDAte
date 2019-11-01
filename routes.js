@@ -5,7 +5,7 @@ const router = express.Router()
 const db = require('./database')
 
 router.get('/', (req, res) => {
-  res.render()
+  res.render('home')
 })
 
 module.exports = router
